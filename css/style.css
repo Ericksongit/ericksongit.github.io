@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+html, body {
+    width: 100%;
+    color: var(--Dark-Charcoal);
+}
+
+img {
+
+    display: block;
+    width: 100%;
+
+}
+h2 {
+    font-family: 'Young  Serif';
+    font-size: 28px;
+    color: var(--Nutmeg);
+    padding-block: 25px;
+}
+
+main {
+    position: relative;
+    background-color: var(--White);
+}
+
+section {
+    padding-inline: 30px;
+}
+
+ul, ol {
+    list-style-position: outside;
+    font-size: 16px;  
+}
+ul li, ol li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    
+}
+
+ol {
+    list-style-type:decimal
+}
+
+span {
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+   
+}
+
+tr {
+    display: table-row;
+}
+
+td {
+    
+    padding-block: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--Eggshell);
+    padding-right: 20px;
+    
+}
+
+td:last-child {
+    font-weight: bold;
+    color: var(--Dark-Raspberry);
+}
+
+
+
+
+
+.last-row td{
+    border-bottom: none;
+}
+
+
+
+
+
+.main-content {
+    color: var(--Dark-Charcoal);
+}
+
+.main-content h2 {
+    font-size: 36px;
+    color: var(--Dark-Charcoal);
+}
+
+.main-content p {
+    color: var(--Wenge-Brown);
+    padding-bottom: 20px;
+    line-height: 1.6;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+.main-container {
+    padding: 20px;
+    background-color: var(--Eggshell);
+    border-radius: 10px;
+}
+
+.main-container h3 {
+    padding-block: 12px;
+    color: var(--Dark-Raspberry);
+    font-size: 20px;
+}
+
+.main-container ul li::marker, .instuctions ol li::marker {
+    font-size: 16px;
+    color: var(--Nutmeg);
+    font-weight: bold;
+}
+
+.ingredients {
+    border-bottom: 1px solid var(--Eggshell);
+}
+
+.ingredients ul {
+  
+    font-size: 16px;
+   
+  
+}
+
+.instuctions {
+    border-bottom: 1px solid var(--Eggshell);
+}
+
+
+
+
+
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Ros-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        background-color: var(--Eggshell);
+    }
+    
+    main  {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+        width: 700px;
+        padding-inline: 30px;
+    }
+    
+    section{
+        padding-inline: 0;
+    }
+
+    img{
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 20px;
+
+    }
+
+
+}
